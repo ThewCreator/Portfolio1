@@ -1,0 +1,84 @@
+
+li a{
+	color: white;
+    font-family: Century Gothic;
+	font-size: 15px;
+	
+}
+
+body {
+	background-image: url("Matrix.gif");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+h1 {
+	background-color: black;
+	color: white;
+	font-size:  30px;
+	font-family: Century Gothic;
+	padding-left: 65px;
+}
+h2 {
+    color: white;
+    font-size: 20px
+}
+
+.h2 {
+    background-color: black;
+    display: block;
+    height: 20px;
+    width: 50px;
+    
+}
+
+.position {
+    float:right; 
+    margin-top:5px;
+    margin-left: 600px;
+    position: absolute;
+}
+.main-nav {
+	float:right;
+	list-style: none;
+	margin-top: 30px;
+}
+.main-nav li {
+	display: inline-block;
+}
+.main-nav li a {
+	color: white;
+	background-color: black;
+    font-family: Century Gothic;
+	font-size: 15px;
+	padding: 8px 20px; 
+	text-decoration: none;
+	
+}
+.main-nav li a:hover {
+	border: 1px solid white; 
+}
+
+.center {
+	margin: auto;
+	width: 20%;
+	padding: 100px;
+}
+
+p {
+    color: white; 
+    font-size: 18px;
+}
+.goals{
+    display: block;
+    background-color: black; 
+    padding: 20px;
+    height: 335px;
+    width: 100px;
+}
+.controls {
+	margin-bottom: 20px;
+	position: absolute;
+}
+
+

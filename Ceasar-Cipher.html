@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Portfolio-CSS.css">
+  <title>Jared Tollar's Portfolio</title> 
+</head>
+
+<body>
+<header>
+
+	<h2>Caesar Cipher</h2>
+	
+</header>
+
+
+<p>Secret message: <input id="text" size="80">
+<p>Shift by key: <input id="key" size="2" value="13">
+<p>Encoded message: <span id="output" style="color:red"></div>
+
+<script src="jquery.js"></script>
+
+<script>
+$('input').keyup(function() {
+  var k = parseInt($('#key').val());
+  if (!(k >= 0 && k < 26)) {
+    $('#output').html('Key should be between 0 and 25');
+    return;
+  }
+  var secret = $('#text').val().toLowerCase();
+  var encoded = '';
+  var alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  for (var j = 0; j < secret.length; j++) {
+    var index = alphabet.indexOf(secret.charAt(j));
+    if (index >= 0) {
+      encoded += alphabet.charAt((index + k) % 26);
+    } else {
+      encoded += secret.charAt(j);
+    }
+  }
+  $('#output').html(encoded);
+});
+</script>
+
+</body>
+
+</html>
